@@ -1,0 +1,606 @@
+{
+	"info": {
+		"_postman_id": "b0a88f22-eb32-47d8-afb8-465891d8782d",
+		"name": "SPRING-TourApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43332964",
+		"_collection_link": "https://solar-robot-432728.postman.co/workspace/Team-Workspace~9f4a1266-a9d8-48ea-880f-7f635884e50f/collection/43332964-b0a88f22-eb32-47d8-afb8-465891d8782d?action=share&source=collection_link&creator=43332964"
+	},
+	"item": [
+		{
+			"name": "add guide",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"isActive\": true,\r\n\"userInsertDTO\": {\r\n\"username\": \"nikos@gmail.com\",\r\n\"password\": \"fdsdsL43324#@\",\r\n\"firstname\": \"Nikos\",\r\n\"lastname\": \"Peristeropoulos\",\r\n\"email\": \"nikos@gmail.com\",\r\n\"vat\": \"4324234243\",\r\n\"dateOfBirth\": \"1994-07-05\",\r\n\"genderType\": \"MALE\",\r\n\"nationality\": \"Greek\",\r\n\"role\": \"GUIDE\",\r\n\"isActive\": true\r\n},\r\n\"tourCategory\": \"URBAN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/guides/save",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"guides",
+						"save"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add guide",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"isActive\": true,\r\n\"userInsertDTO\": {\r\n\"username\": \"giorgos@gmail.com\",\r\n\"password\": \"Giorgos123%\",\r\n\"firstname\": \"Giorgos\",\r\n\"lastname\": \"Nikolaou\",\r\n\"email\": \"giorgos@gmail.com\",\r\n\"vat\": \"2323142342332\",\r\n\"dateOfBirth\": \"1992-08-12\",\r\n\"genderType\": \"MALE\",\r\n\"nationality\": \"Greek\",\r\n\"role\": \"GUIDE\",\r\n\"isActive\": true\r\n},\r\n\"tourCategory\": \"SIGHTSEEING\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/guides/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"guides",
+								"save"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "add guide",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isActive\": true,\r\n    \"userInsertDTO\": {\r\n        \"username\": \"giannis@gmail.com\",\r\n        \"password\": \"Giannis12345!\",\r\n        \"firstname\": \"Giannis\",\r\n        \"lastname\": \"Papadopoulos\",\r\n        \"email\": \"giannis@gmail.com\",\r\n        \"vat\": \"234232342342\",\r\n        \"dateOfBirth\": \"1996-07-05\",\r\n        \"genderType\": \"MALE\",\r\n        \"nationality\": \"Greek\",\r\n        \"role\": \"GUIDE\",\r\n        \"isActive\": true\r\n    },\r\n    \"tourCategory\": \"FOOD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/guides/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"guides",
+								"save"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "add new tour",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"category\": \"FOOD\",\r\n\"price\": 60.95\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/tours/save",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"tours",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isActive\": true,\r\n    \"userInsertDTO\": {\r\n        \"username\": \"lakis@gmail.com\",\r\n        \"password\": \"3242PkFW32@\",\r\n        \"firstname\": \"Lakis\",\r\n        \"lastname\": \"Papadopoulos\",\r\n        \"email\": \"lakis@gmail.com\",\r\n        \"vat\": \"324321212\",\r\n        \"dateOfBirth\": \"1994-02-19\",\r\n        \"genderType\": \"MALE\",\r\n        \"nationality\": \"American\",\r\n        \"role\": \"CUSTOMER\",\r\n        \"isActive\": true\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/customers/save",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"customers",
+						"save"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add new customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isActive\": true,\r\n    \"userInsertDTO\": {\r\n        \"username\": \"christos@gmail.com\",\r\n        \"password\": \"Christos12345!\",\r\n        \"firstname\": \"Christos\",\r\n        \"lastname\": \"Papadopoulos\",\r\n        \"email\": \"christos@gmail.com\",\r\n        \"vat\": \"23334322343\",\r\n        \"dateOfBirth\": \"1991-04-28\",\r\n        \"genderType\": \"MALE\",\r\n        \"nationality\": \"Greek\",\r\n        \"role\": \"CUSTOMER\",\r\n        \"isActive\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customers/save",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customers",
+								"save"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "customer login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"lakis@gmail.com\",\r\n\"password\": \"3242PkFW32@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/auth/authenticate",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "customer login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\": \"pantelis@gmail.com\",\r\n\"password\": \"12345Pantelis@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/authenticate",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "add new booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQ1VTVE9NRVIiLCJzdWIiOiJsYWtpc0BnbWFpbC5jb20iLCJpYXQiOjE3NTczNDg1NDcsImV4cCI6MTc1NzM1MjE0N30.P0xigRDCUb0eDV4epP-q_qi9jkT2VmAwH-u18lKnSXI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingDate\": \"2027-10-31\",\r\n    \"tourCategory\": \"FOOD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/customers/bookings/save",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"customers",
+						"bookings",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guide login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"nikos@gmail.com\",\r\n\"password\": \"fdsdsL43324#@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/auth/authenticate",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a booking to add a guide",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiR1VJREUiLCJzdWIiOiJuaWtvc0BnbWFpbC5jb20iLCJpYXQiOjE3NTczNDQ2NTQsImV4cCI6MTc1NzM0ODI1NH0.juO3kbJnNRqeChIrngXQcSzoH0KE701WM6f0oeG9yjo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/guides/bookings/save/53",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"guides",
+						"bookings",
+						"save",
+						"53"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update a booking to add a guide",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQ1VTVE9NRVIiLCJzdWIiOiJwYW50ZWxpc0BnbWFpbC5jb20iLCJpYXQiOjE3NTc3MDA5MzMsImV4cCI6MTc1NzcwNDUzM30.n7hBnhn7Aajjk_Xn3C-l0G1UDDSdQSNJiPA2roUw7P4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/guides/bookings/save/53",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"guides",
+								"bookings",
+								"save",
+								"53"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "delete booking by customer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQ1VTVE9NRVIiLCJzdWIiOiJwYW50ZWxpc0BnbWFpbC5jb20iLCJpYXQiOjE3NTczNDg2OTMsImV4cCI6MTc1NzM1MjI5M30.oWBAYplifhqXA5mbSthOD-y7QfnKhh35uRYjV0o6Q10",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}/api/customers/bookings/delete/59",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"customers",
+						"bookings",
+						"delete",
+						"59"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all bookings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiR1VJREUiLCJzdWIiOiJuaWtvc0BnbWFpbC5jb20iLCJpYXQiOjE3NTc3MDEwNTIsImV4cCI6MTc1NzcwNDY1Mn0.QNlZgu58xKeUarZOmeMWscnEMn8xIXRCIkJPL_Y7EJo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/bookings",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all bookings without guide",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiR1VJREUiLCJzdWIiOiJuaWtvc0BnbWFpbC5jb20iLCJpYXQiOjE3NTc4NDIwNzMsImV4cCI6MTc1Nzg0NTY3M30.e3ZMIGRoV0vJs-9CHW2uG9fpWLh--7lA21f6xLb-9hY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}/api/guides/available-bookings",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"guides",
+						"available-bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all bookings of a customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQ1VTVE9NRVIiLCJzdWIiOiJwYW50ZWxpc0BnbWFpbC5jb20iLCJpYXQiOjE3NTc3MDI4ODcsImV4cCI6MTc1NzcwNjQ4N30.pMdUAkesfGtJbItmVzr21HlLbmyA_greYXjswTdkbDw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}/api/customers/bookings",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"customers",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/api/guides/bookings/save/61",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiR1VJREUiLCJzdWIiOiJuaWtvc0BnbWFpbC5jb20iLCJpYXQiOjE3NTc4NDIwNzMsImV4cCI6MTc1Nzg0NTY3M30.e3ZMIGRoV0vJs-9CHW2uG9fpWLh--7lA21f6xLb-9hY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/guides/bookings/save/61",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"guides",
+						"bookings",
+						"save",
+						"61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get the bookings of a guide",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiR1VJREUiLCJzdWIiOiJuaWtvc0BnbWFpbC5jb20iLCJpYXQiOjE3NTc4NDIwNzMsImV4cCI6MTc1Nzg0NTY3M30.e3ZMIGRoV0vJs-9CHW2uG9fpWLh--7lA21f6xLb-9hY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}/api/guides/bookings",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"guides",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
