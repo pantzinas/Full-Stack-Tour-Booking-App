@@ -48,6 +48,17 @@ The backend API is documented using **Swagger UI**.
 
 Once the backend server is running, you can access the API documentation at: [Swagger UI](http://localhost:8080/swagger-ui.html)
 
+You can also find the raw OpenAPI specification for the backend API at: `/docs/openapi.json`
+
+---
+
+## Postman Tests
+
+You can import a Postman colleciton to test the backend APIs.
+
+- Download the Postman collection from `postman/SPRING-TourApp.postman_collection.json`
+- Import it in Postman and run tests.
+
 ---
 
 ## Build & Run
