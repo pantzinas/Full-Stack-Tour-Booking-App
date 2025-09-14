@@ -37,6 +37,8 @@ The said repository includes both the frontend and the backend codebases.
 - MySQL
 - Gradle
 
+---
+
 ## Build & Run
 
 ### Backend
@@ -45,7 +47,10 @@ The said repository includes both the frontend and the backend codebases.
 ```bash
 cd spring-rest-back-end
 ```
-- Configure database connection in: src/main/resources/application.properties
+- Configure database connection in:
+```bash
+src/main/resources/application.properties
+```
 - Run the backend server:
 ```bash
 ./gradlew bootRun
@@ -61,7 +66,10 @@ cd react-front-end
 ```bash
 npm install
 ```
-- Create a .env file and set your backend API_URL as follows: VITE_API_URL=http://localhost:8080/api/
+- Create a .env file and set your backend API_URL as follows:
+```bash
+VITE_API_URL=http://localhost:8080/api/
+```
 - Run the development server:
 ```bash
 npm run dev
