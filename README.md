@@ -25,10 +25,13 @@ The said repository includes both the frontend and the backend codebases.
 ### Frontend
 
 - React
-- Vite
+- React Router
+- React Hook Form + Zod (for form validation)
+- TailwindCSS (+ tailwind-merge for class management)
+- JWT decode (handling tokens)
+- Sonner (toast notifications)
+- Vite (build tool)
 - TypeScript
-- React Hook Form + Zod
-- TailwindCSS
 
 ### Prerequisites
 
@@ -36,6 +39,16 @@ The said repository includes both the frontend and the backend codebases.
 - Node.js and npm
 - MySQL
 - Gradle
+
+---
+
+## Backend API Documentation
+
+The backend API is documented using **Swagger UI**.
+
+Once the backend server is running, you can access the API documentation at: [Swagger UI](http://localhost:8080/swagger-ui.html)
+
+---
 
 ## Build & Run
 
@@ -45,7 +58,10 @@ The said repository includes both the frontend and the backend codebases.
 ```bash
 cd spring-rest-back-end
 ```
-- Configure database connection in: src/main/resources/application.properties
+- Configure database connection in:
+```bash
+src/main/resources/application.properties
+```
 - Run the backend server:
 ```bash
 ./gradlew bootRun
@@ -61,7 +77,10 @@ cd react-front-end
 ```bash
 npm install
 ```
-- Create a .env file and set your backend API_URL as follows: VITE_API_URL=http://localhost:8080/api/
+- Create a .env file and set your backend API_URL as follows:
+```bash
+VITE_API_URL=http://localhost:8080/api/
+```
 - Run the development server:
 ```bash
 npm run dev
