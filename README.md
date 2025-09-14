@@ -42,6 +42,14 @@ The said repository includes both the frontend and the backend codebases.
 
 ---
 
+## Backend API Documentation
+
+The backend API is documented using **Swagger UI**.
+
+Once the backend server is running, you can access the API documentation at: [Link Text](http://localhost:8080/swagger-ui.html)
+
+---
+
 ## Build & Run
 
 ### Backend
