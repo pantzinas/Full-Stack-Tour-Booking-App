@@ -25,10 +25,13 @@ The said repository includes both the frontend and the backend codebases.
 ### Frontend
 
 - React
-- Vite
+- React Router
+- React Hook Form + Zod (for form validation)
+- TailwindCSS (+ tailwind-merge for class management)
+- JWT decode (handling tokens)
+- Sonner (toast notifications)
+- Vite (build tool)
 - TypeScript
-- React Hook Form + Zod
-- TailwindCSS
 
 ### Prerequisites
 
